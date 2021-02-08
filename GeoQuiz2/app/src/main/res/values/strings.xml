@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">GeoQuiz2</string>
-    <string name="question_capital">Toronto is the Capital of Canada</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
     <string name="next_button">Next</string>
+
+
+    <string name="question_capital">Toronto is the Capital of Canada</string>
+    <string name="question_provinces">THere\'s 13 provinces in Canada</string>
+    <string name="question_niagra">The Canadian side of Niagara falls is better.</string>
+    <string name="question_ontario">Ontario has the largest population of any of the provinces. </string>
+    <string name="question_oceans">Canada\'s borders touch three oceans</string>
+    <string name="question_fredericton">Fredericton is the capital of New Brunswick </string>
+
+
 </resources>
