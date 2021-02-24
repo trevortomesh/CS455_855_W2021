@@ -7,13 +7,25 @@ private const val TAG = "QuizViewModel"
 
 class QuizViewModel : ViewModel() {
 
-    init{
-        Log.d(TAG, "ViewModel instance created")
-    }
 
-    override fun onCleared(){
-        super.onCleared()
-        Log.d(TAG, "ViewModel instance is about to be destroyed!!!")
+    var currentIndex = 0
+
+    private val questionsBank = listOf(
+            Question(R.string.question_capital, answer = false),
+            Question(R.string.question_fredericton, answer = true),
+            Question(R.string.question_niagra, answer = true),
+            Question(R.string.question_oceans,answer = true),
+            Question(R.string.question_ontario, answer = true),
+            Question(R.string.question_provinces, answer = false)
+    )
+
+    val currentQuestionAnswer: Boolean
+        get() = questionsBank[currentIndex].answer
+
+    val currentQuestionText: Int
+        get() = questionsBank[currentIndex].textResId
+
+    fun moveToNext() {
+        currentIndex = (currentIndex + 1) % questionsBank.size
     }
-    
 }
