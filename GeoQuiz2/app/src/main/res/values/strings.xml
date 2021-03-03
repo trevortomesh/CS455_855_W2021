@@ -14,5 +14,8 @@
     <string name="question_oceans">Canada\'s borders touch three oceans</string>
     <string name="question_fredericton">Fredericton is the capital of New Brunswick </string>
 
-
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">Cheating is wrong... you should feel bad!</string>
 </resources>
