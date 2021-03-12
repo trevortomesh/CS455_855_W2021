@@ -9,6 +9,7 @@ class QuizViewModel : ViewModel() {
 
 
     var currentIndex = 0
+    var isCheater = false
 
     private val questionsBank = listOf(
             Question(R.string.question_capital, answer = false),
